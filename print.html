@@ -1,0 +1,889 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Secondary Transition Resource Guide </title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="chapter-item "><a href="calendar.html"><strong aria-hidden="true">1.</strong> Calendar of Events for 2023-24</a></li><li class="chapter-item "><a href="curr.html"><strong aria-hidden="true">2.</strong> Curricular Resources</a></li><li class="chapter-item "><a href="dis-supp-res.html"><strong aria-hidden="true">3.</strong> District Supported Resources</a></li><li class="chapter-item "><a href="other-res.html"><strong aria-hidden="true">4.</strong> Open Access Web Resources</a></li><li class="chapter-item "><a href="month-themes.html"><strong aria-hidden="true">5.</strong> C-Tran Monthly Themes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="August.html"><strong aria-hidden="true">5.1.</strong> August</a></li><li class="chapter-item "><a href="september.html"><strong aria-hidden="true">5.2.</strong> September</a></li><li class="chapter-item "><a href="october.html"><strong aria-hidden="true">5.3.</strong> October</a></li><li class="chapter-item "><a href="november.html"><strong aria-hidden="true">5.4.</strong> November</a></li><li class="chapter-item "><a href="december.html"><strong aria-hidden="true">5.5.</strong> December</a></li><li class="chapter-item "><a href="january.html"><strong aria-hidden="true">5.6.</strong> January</a></li><li class="chapter-item "><a href="february.html"><strong aria-hidden="true">5.7.</strong> February</a></li><li class="chapter-item "><a href="march.html"><strong aria-hidden="true">5.8.</strong> March</a></li><li class="chapter-item "><a href="april.html"><strong aria-hidden="true">5.9.</strong> April</a></li><li class="chapter-item "><a href="may.html"><strong aria-hidden="true">5.10.</strong> May</a></li></ol></li><li class="chapter-item "><a href="other_resources.html"><strong aria-hidden="true">6.</strong> Other Resources for Teaching Non-Academic Transition Topics</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="student-led-IEP.html"><strong aria-hidden="true">6.1.</strong> Student Led IEPs</a></li><li class="chapter-item "><a href="self-adv-sd.html"><strong aria-hidden="true">6.2.</strong> Self-Advocacy/Self-Determination</a></li><li class="chapter-item "><a href="goal-setting.html"><strong aria-hidden="true">6.3.</strong> Goal-Setting</a></li><li class="chapter-item "><a href="trans-port.html"><strong aria-hidden="true">6.4.</strong> Transition Portfolios</a></li><li class="chapter-item "><a href="transportation.html"><strong aria-hidden="true">6.5.</strong> Transportation</a></li></ol></li><li class="chapter-item "><a href="Transition-Assessments.html"><strong aria-hidden="true">7.</strong> Transition Assessments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="gen-assess.html"><strong aria-hidden="true">7.1.</strong> General Assessment Resources</a></li><li class="chapter-item "><a href="Independent_living.html"><strong aria-hidden="true">7.2.</strong> Independent Living</a></li><li class="chapter-item "><a href="voc-emp.html"><strong aria-hidden="true">7.3.</strong> Vocational/Employment</a></li><li class="chapter-item "><a href="education.html"><strong aria-hidden="true">7.4.</strong> Education</a></li><li class="chapter-item "><a href="self-sd.html"><strong aria-hidden="true">7.5.</strong> Self-Determination</a></li><li class="chapter-item "><a href="parent-sur.html"><strong aria-hidden="true">7.6.</strong> Parent Surveys</a></li></ol></li><li class="chapter-item "><a href="iep.html"><strong aria-hidden="true">8.</strong> IEP</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="agenda.html"><strong aria-hidden="true">8.1.</strong> Agenda</a></li><li class="chapter-item "><a href="quicktips.html"><strong aria-hidden="true">8.2.</strong> IEP Quick Tips</a></li></ol></li><li class="chapter-item "><a href="comm-ag.html"><strong aria-hidden="true">9.</strong> Community Agencies and Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Secondary Transition Resource Guide </h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>This guide is designed to assist secondary special education teachers in supporting students through the critical transition period from high school to postsecondary life. It covers a wide range of topics including curriculum, transition assessments, and community resources. The aim is to provide teachers with practical tools and strategies to help their students succeed in the next phase of their lives. This is a living document, meaning things can be added or removed as new resources are found or old resources are no longer relevevant. Please share anything you think should be included with <a href="mailto:jennifer.burnes@usd497.org">Jennifer Burnes</a>.</p>
+<p>The transition from high school to post-secondary life is a critical period for students with disabilities. It can be a time of great uncertainty and anxiety, as they navigate the challenges of finding employment, pursuing higher education, or living independently. As a special education teacher, you play a crucial role in supporting your students through this transition. This guide is designed to provide you with a comprehensive set of resources and strategies to help your students succeed. From assessments to curriculum and community resources, this guide will equip you with the tools you need to help your students navigate this important period in their lives.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="c-tran-annual-calendar"><a class="header" href="#c-tran-annual-calendar">C-Tran Annual Calendar</a></h2>
+<p>Partial Calendar - will be updated periodically! </p>
+<p><a href="calendar.pdf">Calendar</a></p>
+<style type="text/css"></style>
+<div class="table-wrapper"><table><thead><tr><th>Week Beginning</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr></thead><tbody>
+<tr><td></td><td>Monthly Theme: Getting to Know Ourselves and Each Other</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Aug 7</td><td></td><td></td><td>Work day</td><td>Building PD</td><td>Building PD</td></tr>
+<tr><td>Aug 14</td><td>P/T Conferences</td><td>Convocation/ Building PD</td><td>New Students Start (6, 9, C-Tran)</td><td>All Students Start</td><td>And we're on!</td></tr>
+<tr><td>Aug 21</td><td>First Full Week - Be Kind to Yourself!</td><td></td><td>Bus ride scavenger hunt</td><td></td><td></td></tr>
+<tr><td>Aug 28</td><td></td><td></td><td>Each class chooses based on scavenger hunt ($$)</td><td></td><td></td></tr>
+<tr><td></td><td>Monthly Theme: Getting to Know Ourselves + Circles/Safety</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sep 4</td><td>Labor Day</td><td></td><td>A - Train Depot/B - Library</td><td></td><td></td></tr>
+<tr><td>Sep 11</td><td></td><td></td><td>A - Library/B - Train Depot(Student vote for Week 5 $ outing)</td><td></td><td></td></tr>
+<tr><td>Sep 18</td><td></td><td></td><td>Student Choice $$. Each class chooses.</td><td></td><td></td></tr>
+<tr><td>Sep 25</td><td></td><td></td><td>A - Dillons/B Checkers Scavenger Hunt</td><td></td><td></td></tr>
+<tr><td></td><td>Monthly Theme: Self-Determination/Self-Advocacy</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Oct 2</td><td></td><td></td><td>A - Checkers/B Dillons Scaverger hunt</td><td></td><td></td></tr>
+<tr><td>Oct 9</td><td></td><td></td><td>Holcom Park</td><td></td><td>R/R &amp; Plan</td></tr>
+<tr><td>Oct 16</td><td></td><td></td><td></td><td>PD</td><td>No School</td></tr>
+<tr><td>Oct 23</td><td>Plan</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Oct 30</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Monthly Theme: Social Skills</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nov 6</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nov 13</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nov 20</td><td>Thanksgiving Break - No School</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nov 27</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Monthly Theme: Healthy Relationships</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dec 4</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dec 11</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dec 18</td><td></td><td></td><td>R/R Day</td><td>Winter Break</td><td></td></tr>
+<tr><td>Dec 25</td><td>Winter Break</td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td>Monthly Theme: Home of Your Own</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jan 1</td><td>Winter Break</td><td>AM Plan; PM Work Day</td><td>Building PD</td><td></td><td></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="curriculum"><a class="header" href="#curriculum">Curriculum</a></h1>
+<h3 id="curriculum-overview"><a class="header" href="#curriculum-overview">Curriculum Overview</a></h3>
+<p>This section provides an organized collection of resources tailored for our students:</p>
+<ol>
+<li><strong>District-Supported Resources</strong>: These are paid subscriptions, chosen for their relevance and effectiveness for our program.</li>
+<li><strong>Open Access Web Resources</strong>: Freely available online resources covering a broad spectrum of topics to fit classroom needs.</li>
+<li><strong>Monthly Themes</strong>: Curated resources for each theme to help seamlessly incorporate them into your instruction.</li>
+<li><strong>Non-Academic Transition Topics</strong>: This includes resources on student-led IEPs, self-determination, self-advocacy, and local transportation system use, all aimed at preparing students for postsecondary pursuits.</li>
+</ol>
+<p>We trust this guide will be invaluable in your efforts. Your dedication to our students' success is deeply appreciated!</p>
+<hr />
+<p>As you build your schedule, keep in mind the importance of <strong>routines</strong>. Routines and structure serve as a stable foundation for many of our students, offering a sense of predictability and security. This, in turn, fosters a supportive environment in which they can develop critical life skills, adapt to changes, and become more self-sufficient.</p>
+<p>Here are some <strong>SAMPLE</strong> schedules to guide you as you begin to build your class's schedule. Of course, you can modifiy and adjust as students begin working in their community work experience, as club activities get added to the calendar, and as you get to know your students and their needs.</p>
+<h4 id="general-example---other-school-based-vocational-experiences-will-be-built-into-the-day-but-this-can-be-a-general-scheduleguide-for-those-who-are-not-otherwise-engaged"><a class="header" href="#general-example---other-school-based-vocational-experiences-will-be-built-into-the-day-but-this-can-be-a-general-scheduleguide-for-those-who-are-not-otherwise-engaged">General example - other school based vocational experiences will be built into the day, but this can be a general schedule/guide for those who are not otherwise engaged.</a></h4>
+<div class="table-wrapper"><table><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+<tr><td>8:00 - 8:30</td><td>Breakfast</td><td>Students start their day with breakfast and socialize with their peers. Encourage students who don't eat to walk in the gym or get on an exercise bike in the wellness room.</td></tr>
+<tr><td>8:30 - 9:00</td><td>Morning Circle</td><td>Students gather to review the day's schedule, discuss goals, and share any announcements. On Mondays, they will look at the week's schedule and decide on any clubs they wish to participate in and put on their schedule. <br/>Help students build a routine to check their email and use their google or other personal device calendar in addition to a visual schedule.</td></tr>
+<tr><td>9:00 - 9:45</td><td>Individual Goals</td><td>Students work on their personal goals with guidance from the instructor or support staff.</td></tr>
+<tr><td>9:45 - 10:15</td><td>Break (non-tech)</td><td>Students take a 30-minute movement break - they may go outside, walk in the gym, shoot baskets, ride the bicycle, etc. if it's not a scheduled APE day.</td></tr>
+<tr><td>10:15 - 11:00</td><td>Group Lesson</td><td>The class comes together for a group lesson on topics such as budgeting, meal planning, self-advocacy, workplace basics, etc. Students scheduled to cook can begin prepping and cooking.</td></tr>
+<tr><td>11:00 - 11:30</td><td>Lunch</td><td>Students have a 30-minute lunch break to eat, socialize, and relax.</td></tr>
+<tr><td>11:30 - 12:00</td><td>Movement Break</td><td>When students finish eating, encourage them to get up and move before afternoon lessons begin.</td></tr>
+<tr><td>12:00 - 12:45</td><td>Elective</td><td>Students participate in a chosen elective/topic to explore their interests and build additional skills. This could be computer programming, animation,  making movies and learning how to post on social media, reading or listening to audio books, watching you-tube videos on how to make something, etc.j</td></tr>
+<tr><td>12:30 - 1:00</td><td>Individual Practice</td><td>Students engage in individual practice activities based on the skills learned during the group lesson.</td></tr>
+<tr><td>1:00 - 1:45</td><td>Job Olympics Practice</td><td>The class participates in activities designed to develop vocational  job skills.</td></tr>
+<tr><td>1:45 - 2:00</td><td>Break (tech)</td><td>Students enjoy a 15-minute break and may use technology for leisure or educational purposes.</td></tr>
+<tr><td>2:00 - 2:30</td><td>Reflection and Wrap-up</td><td>The class gathers to reflect on the day's activities, discuss successes and challenges, and set goals for the next day. Students who had community work shifts will share about their experience for that day.</td></tr>
+</tbody></table>
+</div>
+<hr />
+<h4 id="example-with-student-groups"><a class="header" href="#example-with-student-groups">Example with student groups</a></h4>
+<p>As students begin to work in the building or community, you can adjust the times as needed to ensure students a</p>
+<div class="table-wrapper"><table><thead><tr><th>Time</th><th>Group A Activity</th><th>Group B Activity</th><th>Group C Activity</th></tr></thead><tbody>
+<tr><td>8:00 - 8:30</td><td>Breakfast</td><td>Breakfast</td><td>Breakfast</td></tr>
+<tr><td>8:30 - 9:45</td><td>Work Experience (until 10)</td><td>Individual Goals</td><td>Individual Goals</td></tr>
+<tr><td>9:45 - 10:00</td><td>Break (all students who are not at work)</td><td>Break (all students who are not at work)</td><td>Break (all students who are not at work)</td></tr>
+<tr><td>10:00 - 10:45</td><td>Group Lesson</td><td>Work Experience</td><td>Group Lesson</td></tr>
+<tr><td>10:45 - 11:30</td><td>Job Olympics Practice</td><td>Job Olympics Practice</td><td>Job Olympics Practice</td></tr>
+<tr><td>11:30 - 12:00</td><td>Lunch</td><td>Lunch</td><td>Lunch</td></tr>
+<tr><td>12:00 - 12:15</td><td>Movement break</td><td>Movement break</td><td></td></tr>
+<tr><td>12:15 - 1:00</td><td>Elective</td><td>Elective</td><td>Work Experience</td></tr>
+<tr><td>1:00 - 1:45</td><td>Individual Goals</td><td>Group Lesson</td><td>Elective</td></tr>
+<tr><td>1:45 - 2:00</td><td>Tech Break</td><td>Tech Break</td><td>Tech Break</td></tr>
+<tr><td>2:00 - 2:30</td><td>Reflection and Wrap-up</td><td>Reflection and Wrap-up</td><td>Reflection and Wrap-up</td></tr>
+</tbody></table>
+</div>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="district-supported-resources"><a class="header" href="#district-supported-resources">District Supported Resources</a></h1>
+<ul>
+<li>
+<p><a href="https://projectsearch.us/pre-transition-questionnaire/8-5-pre-curriculum/">Project Search Pre-Transition Curriculum</a></p>
+<p>This curriculum is provided for free to districts who have a Project Search program.</p>
+<p>Units, objectives, and specific daily activities are highlighted in the below attachment.</p>
+<p><a href="Introduction-and-Overview_Final.pdf">Lessons for Living, Learning, and Working Overview</a></p>
+<p>Curricular units are highlighted below. </p>
+<ul>
+<li>
+<p><a href="Unit-1-DailyLivingSkills.pdf">Unit 1: Daily Living Skills</a></p>
+</li>
+<li>
+<p><a href="Unit-2-FunctionalLiteracy.pdf">Unit 2: Functional Literacy</a></p>
+</li>
+<li>
+<p><a href="Unit-3-FunctionalMath.pdf">Unit 3: Functional Mathematics</a></p>
+</li>
+<li>
+<p><a href="Unit-4-JobSearchProcess.pdf">Unit 4: Job Search Process</a></p>
+</li>
+<li>
+<p><a href="Unit-5-Self-Advocacy.pdf">Unit 5: Self-Advocacy</a></p>
+</li>
+<li>
+<p><a href="Unit-6-SocialandCommunicationSkills.pdf">Unit 6: Social and Communication Skills</a></p>
+</li>
+<li>
+<p><a href="Unit-7-SoftSkills.pdf">Unit 7: Soft Skills</a></p>
+</li>
+<li>
+<p><a href="Unit-8-Technology.pdf">Unit 8: Technology</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.n2y.com/news2you/">News to You</a></p>
+</li>
+<li>
+<p><a href="https://www.n2y.com/unique-learning-system/">Unique Learning Systems</a></p>
+</li>
+<li>
+<p><a href="https://web.teachtown.com/">Teachtown</a></p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><p>Transition Bell Ringers are centered around essential ideas found in the <em>Me! Lessons for Teaching Self-Awareness and Self-Advocacy</em>, which encompass self-awareness, understanding disabilities, setting goals, and student participation in the IEP process.</p>
+<p>Additionall bell ringers address a range of other subjects. These can be employed individually, in small groups, or for whole class discussions. Feel free to adapt them as necessary to accommodate the unique requirements of your students - the objective is to foster opportunities for dialogue and learning that cover a diverse array of crucial transition-related themes.</p>
+<p><a href="Transition-bell-work.pdf">Transition Bell Ringers</a></p>
+<p><a href="fundamental-bell-ringers.pdf">Fundamental Transition Skills</a></p>
+<p><a href="functional-bell-ringers.pdf">Functional Transition Skills</a></p>
+<p><a href="daily_ind_living_bell_ringers.pdf">Daily Living/Independent Living</a></p>
+<p><a href="math-bell-ringers.pdf">Math Skills for Everyday</a></p>
+<hr />
+<p><a href="https://familiestogetherinc.org/transition-to-adulthood-for-students/">Families Together, Inc.</a> is a Kansas based nonprofit organization that provides support and advocacy services for families of children and youth with disabilities. This section is focused on the transition to adulthood for students with disabilities.</p>
+<p>On this page, you can find a variety of resources related to the transition process, including information on the transition planning process, the role of families in the transition process, and available resources and supports for individuals with disabilities as they transition to adulthood.</p>
+<p>Some of the specific resources and topics covered on the page include:</p>
+<ul>
+<li>Overview of the transition process and timeline</li>
+<li>Importance of self-determination and self-advocacy</li>
+<li>The role of families and caregivers in the transition process</li>
+<li>Information on post-secondary education options and financial aid</li>
+<li>Employment and vocational training resources and supports</li>
+<li>Housing and independent living options</li>
+<li>Resources for accessing healthcare and other community supports</li>
+<li>Legal considerations and protections for individuals with disabilities</li>
+</ul>
+<p>It also include Transition to Adulthood E-Learning Modules that are self-paced. Students must create an account. </p>
+<ul>
+<li>Module 1 – Transition &amp; the IEP</li>
+<li>Module 2 – Self-advocacy</li>
+<li>Module 3 – Your IEP Team</li>
+<li>Module 4 – Who are You Now (Transition Assessment &amp; Present Levels of Academic Achievement and Functional Performance)</li>
+<li>Module 5 – My Dreams for After High School (Postsecondary Goals)</li>
+<li>Module 6 – Agencies that Can Help (Interagency Linkages)</li>
+</ul>
+<hr />
+<p><a href="https://www.spedadulting.com/blogs/">Adulting Made Easy</a> is a comprehensive platform that provides resources, information, and support for special education students transitioning to adulthood. The website is dedicated to helping individuals with disabilities navigate the complexities of adult life, such as housing, employment, financial management, and community integration.</p>
+<p>The website is organized into several sections:</p>
+<ol>
+<li>
+<p>Home: The homepage provides an overview of the Sped Adulting platform, highlighting its mission and purpose.</p>
+</li>
+<li>
+<p>About: This section gives background information on the founder, Ali Jones, a special education teacher, and the story behind Sped Adulting.</p>
+</li>
+<li>
+<p>Services: Sped Adulting offers various services such as workshops, coaching, and consulting. They also provide resources and materials to support the transition process for special education students.</p>
+</li>
+<li>
+<p>Blogs: The blog section covers a wide range of topics related to special education and adult life, such as navigating social security benefits, exploring housing options, and finding employment opportunities. These articles offer valuable insights and tips for individuals, families, and educators.</p>
+</li>
+<li>
+<p>Resources: This section provides a curated list of resources, including articles, videos, books, and websites, to help individuals with disabilities, their families, and educators find relevant information and support.</p>
+</li>
+</ol>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="monthly-themes"><a class="header" href="#monthly-themes">Monthly Themes</a></h1>
+<p>The monthly themes in our curriculum section cover a range of relevant topics for young adults transitioning to adulthood. Each theme provides an opportunity for additional focus on specific areas, but the topics can also be integrated throughout the year as needed.</p>
+<p>For example, in August, our focus is on personal preferences and interests, as well as team building activities. This is an important time for our students to explore their passions and learn more about themselves, while also developing important social and communication skills. In November, more focus will be given to important social skills. This theme is designed to help our students develop the skills they need to navigate social situations and build positive relationships with others.</p>
+<p>Other themes throughout the year include topics such as personal safety, sex education, self-advocacy, and community involvement. Each theme is designed to provide a comprehensive and engaging learning experience that will help our students prepare for the challenges and opportunities that await them after they exit the school system. </p>
+<p>By focusing on these themes throughout the year, we are able to provide a consistent and meaningful educational experience for our students, while also creating opportunities for continued growth and development. What we learn about our students during these themes can carry over throughout the year, providing a strong foundation for success.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="august"><a class="header" href="#august">August</a></h1>
+<h3 id="getting-to-know-ourselves-and-each-other"><a class="header" href="#getting-to-know-ourselves-and-each-other">Getting to Know Ourselves and Each Other</a></h3>
+<p>Young adults will assess their individual learning styles, personal boundaries, personal preferences, and community interests as they participate in various activities throughout the month. The concept of team building will be introduced to the young adults as they participate in “icebreaker activities”. Person centered planning will be (re)visited as the young adults review, revise, or make their goals and help develop their individual schedules.</p>
+<h5 id="suggested-community-outingsvisitors-if-you-need-ideas"><a class="header" href="#suggested-community-outingsvisitors-if-you-need-ideas">Suggested community outings/visitors (if you need ideas):</a></h5>
+<ul>
+<li>
+<p>Ride the bus! Take the bus all around town and make it a scavenger hunt. Take the full route from a pickup place (that is, get on and off at the same place) and have students note places they see that they would like to visit. </p>
+<ul>
+<li>You can extend this to a communication activity to tell the class/small group what/where/why. </li>
+</ul>
+</li>
+<li>
+<p>Have all students write a place they'd like to visit on a piece of paper (within reason - hours/location feasible within the school day). Have a contest to see who gets to draw the place, and then collaboriatively plan the trip (bus, times, what to do)</p>
+</li>
+<li>
+<p>Get outside! Wildflowers are in full force at many places in the area. Some ideas are below (there are many more!)</p>
+<ul>
+<li>
+<p>Baker Wetlands</p>
+</li>
+<li>
+<p><a href="https://biosurvey.ku.edu/rockefeller-experimental-tract">Rockefeller Experimental Tract | Kansas Biological Survey &amp; Center for Ecological Research</a> (short accessible concrete pathway .80 mile out and back with a nice view at the turnaround)</p>
+</li>
+<li>
+<p>Lawrence Arboretum </p>
+</li>
+<li>
+<p><a href="https://reader.ku.edu/sensory-garden">Audio-Reader Sensory Garden</a> at KU </p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><a href="https://www.lifecoursetools.com/lifecourse-library/foundational-tools/person-centered/">Person Centered Planning tools</a> directs you to the LifeCourse Library's section on Person-Centered Foundational Tools. LifeCourse Library is a resource hub that offers tools, materials, and resources to support individuals with disabilities and their families in achieving their desired outcomes across the lifespan.</p>
+<p>The Person-Centered Foundational Tools are designed to help individuals with disabilities, their families, and professionals create person-centered plans that take into account the individual's strengths, preferences, and needs. These tools are meant to empower people to take control of their lives and to ensure that services and supports are tailored to meet their unique requirements.</p>
+<p>The tools in this section are organized into the following categories:</p>
+<ol>
+<li>
+<p><strong>Charting the LifeCourse Framework</strong>: A collection of tools and resources to help individuals and families develop a vision for a good life, identify the steps needed to achieve it, and understand the different types of supports available.</p>
+</li>
+<li>
+<p><strong>Person-Centered Thinking and Planning</strong>: Tools and resources that support the use of person-centered thinking and planning processes, which focus on the individual's unique strengths, preferences, and needs.</p>
+</li>
+<li>
+<p><strong>Conversations on the Journey</strong>: Resources to help facilitate conversations about the person's life journey, including their past experiences, present situation, and future goals.</p>
+</li>
+<li>
+<p><strong>Implementation and Monitoring</strong>: Tools to support the implementation of person-centered plans and monitor progress toward desired outcomes.</p>
+</li>
+<li>
+<p><strong>Capacity Building</strong>: Resources to help individuals, families, and professionals develop the skills and knowledge needed to create and sustain person-centered plans and supports.</p>
+</li>
+</ol>
+<hr />
+<p><a href="https://inclusion.com/path-maps-and-person-centered-planning/circles-friends-2/">Circles of Friends/Support</a> is a person-centered approach to building support networks for individuals with disabilities. This   platform offers resources and information on inclusive practices, person-centered planning, and community building for people with disabilities.</p>
+<p>Circles of Friends is a strategy that involves creating a support network of friends, family, professionals, and community members who come together to help an individual with disabilities achieve their goals and aspirations. The main purpose of Circles of Friends is to promote social inclusion and ensure that individuals with disabilities have the opportunity to build meaningful relationships and participate fully in their community.</p>
+<p>The page provides the following information on Circles of Friends:</p>
+<ol>
+<li><strong>Introduction</strong>: A brief explanation of the Circles of Friends concept and its benefits.</li>
+<li><strong>Stories and Examples</strong>: Real-life stories and examples of how Circles of Friends have positively impacted the lives of individuals with disabilities.</li>
+<li><strong>Articles and Publications</strong>: A list of articles and publications that discuss the Circles of Friends approach and provide guidance on how to implement it.</li>
+<li><strong>Workshops and Training</strong>: Information on workshops and training sessions offered by Inclusion.com to help families, educators, and support workers develop the skills and knowledge needed to create and maintain Circles of Friends.</li>
+<li><strong>Videos</strong>: A selection of videos showcasing stories of Circles of Friends and the positive impact they have on the lives of individuals with disabilities.</li>
+</ol>
+<hr />
+<h3 id="optional-icebreaker-activities"><a class="header" href="#optional-icebreaker-activities">Optional Icebreaker Activities</a></h3>
+<p>Modify/adapt to meet your students' needs. Include your paras in the activities! </p>
+<ol>
+<li>Sensory scavenger hunt: Create a list of items with different sensory characteristics (e.g., soft, smooth, rough, warm, cold) that can be found in the environment. Participants work in pairs or small groups to find and collect these items. This activity encourages communication and teamwork while engaging various senses.</li>
+<li>The name game: Each participant introduces themselves and shares a word or phrase that starts with the same letter as their name (e.g., &quot;Friendly Fred&quot;). As each person introduces themselves, the group must repeat the previous names and adjectives. This activity helps participants remember each other's names and encourages listening skills.</li>
+<li>Collaborative art project: Participants work together to create a group art piece, such as a mural or collage. Encourage them to communicate their ideas and preferences, either verbally or non-verbally. This activity fosters teamwork, creativity, and self-expression.</li>
+<li>Two truths and a lie: Each participant shares three statements about themselves – two truths and one lie. The rest of the group tries to guess which statement is the lie. This activity encourages sharing and helps participants learn more about each other.</li>
+<li>Would you rather: Participants take turns asking &quot;Would you rather&quot; questions (e.g., &quot;Would you rather be able to fly or be invisible?&quot;). Everyone answers the question, and it can spark interesting discussions and help the group learn more about each other's preferences.</li>
+<li>Common ground: Participants are given a list of topics (e.g., favorite movies, hobbies, travel destinations) and must find things they have in common with others in the group. This activity encourages communication and helps participants find shared interests.</li>
+<li>Find someone who: Create a list of statements such as &quot;Find someone who has a pet,&quot; &quot;Find someone who has traveled to another country,&quot; or &quot;Find someone who plays a musical instrument.&quot; Participants must find someone in the group who matches each statement and write their names down. This activity encourages mingling and conversation.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="september"><a class="header" href="#september">September</a></h1>
+<h3 id="circles--personal-safety"><a class="header" href="#circles--personal-safety">CIRCLES &amp; Personal Safety</a></h3>
+<p>Young adults will view the video entitled “Circles.” The video addresses self-esteem, relationships, and personal space.  After viewing the video, each young adult will bring in pictures and develop his or her own circle chart by placing important people in their lives in appropriate circles. Young adults will also be discussing and role-playing home and community safety, will participate in a safety workshop with a community resource officer, and will visit the local police department.</p>
+<h5 id="suggested-community-outingsvisitors-if-you-need-ideas-1"><a class="header" href="#suggested-community-outingsvisitors-if-you-need-ideas-1">Suggested community outings/visitors (if you need ideas):</a></h5>
+<ul>
+<li>
+<p>Visit the fire department</p>
+</li>
+<li>
+<p>Have a Lawrence Public Safety officer visit (include other classes)</p>
+</li>
+</ul>
+<hr />
+<p>Safety 911 </p>
+<p>In Case of Emergency (ID Card, when/how to use it)</p>
+<p>Have a safety sign scavenger hunt. </p>
+<p><a href="https://www.youtube.com/watch?v=AsSdyDNovzs">Learning Our Six Cirles</a> is a 9 minute video that explains the six cirlces and who fits into each circle. Some students may think the presentation is geared to younger students. As an alternative, consider watching <a href="https://www.youtube.com/watch?v=eYwzF4K8Pog">Circles of Trust Tool</a>. Prepare your support staff ahead of time to work on this in small groups with your students.</p>
+<hr />
+<p>When teaching community safety, here are some resources you may find helpful.</p>
+<p><a href="https://www.nfpa.org/Public-Education/Fire-causes-and-risks/Specific-groups-at-risk/People-with-disabilities/Educational-materials">National Fire Protection Association</a> provides safety tips, videos on fire safety, and emergency preparedness checkliests geared to individuals with disabilities and/or educators.</p>
+<hr />
+<p><a href="https://besafethemovie.com/">Be Safe The Movie</a> uses video modeling to show students how to interact with the police in everyday encoungers. Safety skills are demonstrated across 7 episodes, ranging from following instructions to the right to remain silent. (Further resources are forthcoming.)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="october"><a class="header" href="#october">October</a></h1>
+<h3 id="self-advocacy--self-determination"><a class="header" href="#self-advocacy--self-determination">Self-Advocacy &amp; Self Determination</a></h3>
+<p>Young adults will inventory their strengths through the IPLAN strategy. This strategy will help them prepare for their IEPs. They will learn the difference between aggressive, assertive, and non-assertive communication. They will also role-play various situations with their peers.</p>
+<hr />
+<p>Check out the curriculum page with <a href="self-adv-sd.html">self-determination</a> resources.</p>
+<h5 id="suggested-community-outingsvisitors-if-you-need-ideas-2"><a class="header" href="#suggested-community-outingsvisitors-if-you-need-ideas-2">Suggested community outings/visitors (if you need ideas):</a></h5>
+<ul>
+<li>Have the <a href="https://sackonline.org/">Self-Advocate Coalition of Kansas</a> (SACK) visit and do a presentation. Schedule at least a month out. </li>
+<li></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="november"><a class="header" href="#november">November</a></h1>
+<h3 id="social-skills"><a class="header" href="#social-skills">Social Skills</a></h3>
+<p>Social skills instruction will take place in a group setting with much role-play and group discussion. The “Mind Your Manners” and “Be Cool” video series will be reviewed to help promote a mindset for appropriate social behavior. Instruction will then be individualized with each young adult being taught social skills relevant to his/her own needs. The young adults will be reminded of skills learned this month as they occur in natural settings.</p>
+<p><a href="https://www.youtube.com/watch?v=N4lva7OydYA">20 Public Transport Etiquette Rules You Should Remember - YouTube</a></p>
+<h5 id="suggested-community-outingsvisitors-if-you-need-ideas-3"><a class="header" href="#suggested-community-outingsvisitors-if-you-need-ideas-3">Suggested community outings/visitors (if you need ideas):</a></h5>
+<ul>
+<li>Any community outing is a time to pracitce appropriate social skills. 
+<ul>
+<li>Grocery shopping - asking an employee where to find something</li>
+<li>Ordering at McDonalds</li>
+<li>Buying admission tickets to a museum</li>
+<li>Ordering at a restaurant</li>
+<li>Navigating a busy business entranceway or aisle </li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="december"><a class="header" href="#december">December</a></h1>
+<h3 id="healthy-relationships"><a class="header" href="#healthy-relationships">Healthy Relationships</a></h3>
+<p>Douglas County Health Department will work with C-Tran staff on a variety of presentations on reproductive organs, pregnancy, sexually transmitted diseases, contraception, and dating/relationships. Young adults will also have a guest speaker from the GaDuGi Foundation to talk with them about the concepts of sexual harassment and sexual assault.</p>
+<h5 id="suggested-community-outingsvisitors-if-you-need-ideas-4"><a class="header" href="#suggested-community-outingsvisitors-if-you-need-ideas-4">Suggested community outings/visitors (if you need ideas):</a></h5>
+<ul>
+<li>I've got nothing.</li>
+<li>Visit from someone from the County Health Department? </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="january"><a class="header" href="#january">January</a></h1>
+<h3 id="home-of-your-own"><a class="header" href="#home-of-your-own">Home of Your Own</a></h3>
+<p>This curriculum focuses on interpersonal conflicts that happen between roommates.  Some topics include borrowing and lending money, sharing expenses, home safety, and respecting the privacy of others. Problem solving skills are introduced that involve strangers, neighbors, co-workers, friends, family members, and staff or service providers. Young adults will be encouraged to use problem-solving skills when involved in personal conflicts at home and at C-Tran.</p>
+<h5 id="suggested-community-outings-if-you-need-ideas"><a class="header" href="#suggested-community-outings-if-you-need-ideas">Suggested community outings (if you need ideas):</a></h5>
+<ul>
+<li>
+<p>Good Life Apartments (will need to schedule well ahead of time). </p>
+<ul>
+<li>
+<p>Email: Stephanie Thorne (stephaniethorne@mygoodlife.org)</p>
+<p>They can provide a tour of their apartments and the different supports they provide their residents. </p>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="february"><a class="header" href="#february">February</a></h1>
+<h3 id="living-options--being-self-sufficient"><a class="header" href="#living-options--being-self-sufficient">Living Options &amp; Being Self-Sufficient</a></h3>
+<p>We will spend this month talking about the different types of living options that are available to each young adult. The young adults will visit different types of living situations and get a feel for which ones they would like for the future. </p>
+<p>Young adults will be presented with the concept of being self-sufficient. Weekly budgets and personal expenses will be analyzed as young adults make the connection between having a job, receiving a paycheck, and supporting themselves. Previous C-Tran young adults or other young adults with disabilities in the community will present as guest speakers on achievements and/or hardships that they have faced.</p>
+<h5 id="suggested-community-outings-if-you-need-ideas-1"><a class="header" href="#suggested-community-outings-if-you-need-ideas-1">Suggested community outings (if you need ideas):</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="march"><a class="header" href="#march">March</a></h1>
+<h3 id="employment"><a class="header" href="#employment">Employment</a></h3>
+<p>Young adults will select and begin practicing for their Job Olympics events. Young adults will also have the opportunity to develop a resume, have mock job interviews, and discuss and role play the skills needed to get and keep a job.</p>
+<h5 id="suggested-community-outings-if-you-need-ideas-2"><a class="header" href="#suggested-community-outings-if-you-need-ideas-2">Suggested community outings (if you need ideas):</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="april"><a class="header" href="#april">April</a></h1>
+<h3 id="emergency-situations"><a class="header" href="#emergency-situations">Emergency Situations</a></h3>
+<p>Several experts from the Lawrence community will be invited to C-Tran to talk about safety during emergency situations. Representatives from the Lawrence Fire Department will come to C-Tran to discuss fire safety and prevention. Finally, the American Red Cross will teach a course about basic injuries and what to do until help arrives. Shelter areas and fire escape routes will be identified throughout these presentations.</p>
+<h5 id="suggested-community-outings-if-you-need-ideas-3"><a class="header" href="#suggested-community-outings-if-you-need-ideas-3">Suggested community outings (if you need ideas):</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="may"><a class="header" href="#may">May</a></h1>
+<h3 id="recreation-and-leisure"><a class="header" href="#recreation-and-leisure">Recreation and Leisure</a></h3>
+<p>Throughout the year, young adults in C-Tran will be exploring “3rd Places.” During this month, we will visit many recreation and leisure facilities within the town of Lawrence.  Young adults will vote as a group on 2-3 end of year activities that will take place in the community. Young adults will understand the process of enrollment, fee payment, and activity schedules as they conclude this session.</p>
+<p>Student Rec Center IDs</p>
+<h5 id="suggested-community-outings-if-you-need-ideas-4"><a class="header" href="#suggested-community-outings-if-you-need-ideas-4">Suggested community outings (if you need ideas):</a></h5>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="other-resources-for-teaching-non-academic-transition-topics"><a class="header" href="#other-resources-for-teaching-non-academic-transition-topics">Other Resources for Teaching Non-Academic Transition Topics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="student-led-individualized-education-programs-ieps"><a class="header" href="#student-led-individualized-education-programs-ieps">Student Led Individualized Education Programs (IEPs)</a></h1>
+<p>Why should we teach our students to lead their own IEPs? </p>
+<p>Student-led IEPs are important for students with disabilities for several reasons:</p>
+<ol>
+<li>
+<p><strong>Empowerment and self-advocacy</strong>: Student-led IEPs involve students in the decision-making process, encouraging them to advocate for their own needs and preferences. This empowers them to take ownership of their education and builds self-confidence.</p>
+</li>
+<li>
+<p><strong>Self-awareness</strong>: Participating in the IEP process helps students with disabilities develop a better understanding of their strengths, challenges, and accommodations. This self-awareness enables them to be more effective in their learning and to communicate their needs more effectively.</p>
+</li>
+<li>
+<p><strong>Goal-setting and self-determination</strong>: Student-led IEPs help students set their own goals and develop strategies to achieve them. This promotes self-determination and encourages students to take responsibility for their progress.</p>
+</li>
+<li>
+<p><strong>Enhanced communication</strong>: Involving students in the IEP process promotes open communication between students, parents, teachers, and other support staff. This collaboration helps to ensure that everyone is working together to meet the student's needs.</p>
+</li>
+<li>
+<p><strong>Greater engagement</strong>: When students are actively involved in their IEP, they are more likely to be engaged and invested in their education. This leads to better academic performance and improved social-emotional outcomes.</p>
+</li>
+<li>
+<p><strong>Transition planning</strong>: Student-led IEPs help prepare students for post-secondary education, employment, and independent living. By involving students in the planning process, they are better prepared to make decisions about their future and navigate the challenges that may arise.</p>
+</li>
+<li>
+<p><strong>Personalized learning</strong>: Student-led IEPs prioritize the student's individual needs, ensuring that their education is tailored to their unique strengths and challenges. This personalized approach helps to maximize their potential and promote academic success.</p>
+</li>
+</ol>
+<p>In summary, student-led IEPs are crucial for students with disabilities because they empower them, encourage self-advocacy, and promote self-awareness, goal-setting, and self-determination. Additionally, these IEPs foster communication, engagement, and personalized learning, all while preparing students for the future.</p>
+<p>Below are some resources to help you help your students lead their IEPs. </p>
+<hr />
+<p><a href="StudentLedIEP.pdf">How to Help Students Lead Their IEP Meetings</a> is a great article from Teaching Exceptional Children that outlines steps you can take to implement student led IEPs in your practice. </p>
+<p><a href="https://ttac.odu.edu/intellectual-disabilities/how-to-make-student-led-ieps-a-reality/#:~:text=How%20to%20Make%20Student-Led%20IEPs%20a%20Reality%201,%E2%80%9Caccording%20to%20XX%20assessment%E2%80%A6%E2%80%9D.%20...%203%20Rehearse%20">How to Make Student-Led IEPs a Reality</a> is a resource from the Virginia Department of Education's Training and Technical Assistance Center. It's short, but highlights important steps you can take to incorporate student led IEPs with your students. </p>
+<p><a href="https://www.imdetermined.org/resource/student-led-iep/">I'm Determined</a> is a wonderful resource that had video modules, articles, and templates. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="self-advocacyself-determination"><a class="header" href="#self-advocacyself-determination">Self-Advocacy/Self-Determination</a></h1>
+<p>From the Project Search Pre-Transition Curriculum</p>
+<ul>
+<li><a href="Unit-5-Self-Advocacy.pdf">Unit 5: Self-Advocacy</a></li>
+<li><a href="Unit-6-SocialandCommunicationSkills.pdf">Unit 6: Social and Communication Skills</a>](Unit-5-Self-Advocacy.pdf)</li>
+</ul>
+<hr />
+<h3 id="choicemaker-self-determination-transition-curriculum-modules--materials"><a class="header" href="#choicemaker-self-determination-transition-curriculum-modules--materials"><strong>ChoiceMaker Self-Determination Transition Curriculum Modules &amp; Materials</strong></a></h3>
+<p>The  <a href="choice-curriculum-matrix.pdf"><em>ChoiceMaker Self-Determination Transition Curriculum</em> Matrix</a> is a guide for using these lessons. Results from the <a href="ChoiceMakerAssessment2016.pdf"><em>ChoiceMaker Self-Determination Assessment</em></a> can be mapped onto the Matrix to identify students' self-determination needs.</p>
+<p><a href="https://youtu.be/8BZ2zzK0Df4">Choosing Goals video</a> is a 10 minute video that may be used to introduce the topic. The video was made by individuals with IEPs. Hair/clothes shows that it is outdated, but the topics are still relevant. Maybe a class or two would want to create an updated video? Many transition skills could be integrated in the endeavor! </p>
+<h4 id="choosing-goals"><a class="header" href="#choosing-goals"><strong>Choosing Goals</strong></a></h4>
+<ul>
+<li>
+<p>Choosing Education Goals</p>
+<ul>
+<li>
+<p><a href="education-goals-description.pdf">Description</a></p>
+</li>
+<li>
+<p><a href="education-goals-lessons.pdf">Teacher's Manual and Student Lessons</a></p>
+</li>
+<li>
+<p><a href="education-goals-worksheets.pdf">Reproducibles</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Choosing Employment Goals </p>
+<ul>
+<li>
+<p><a href="employment-goals-description.pdf">Description</a></p>
+</li>
+<li>
+<p><a href="employment-goals-lessons.pdf">Teacher's Manual and Student Lessons</a></p>
+</li>
+<li>
+<p><a href="employment-tracking-sheet.pdf">Reproducibles</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Choosing Personal Goals </p>
+<ul>
+<li>
+<p><a href="personal-goals-description.pdf">Description</a></p>
+</li>
+<li>
+<p><a href="personal-goals-lessons.pdf">Teacher's Manual and Student Lessons</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="expressing-goals"><a class="header" href="#expressing-goals"><strong>Expressing Goals</strong></a></h4>
+<ul>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Teacher Manual</p>
+</li>
+<li>
+<p>Student Workbook</p>
+</li>
+<li>
+<p>Educator- or Student-Directed IEP Presentation (.ppt)</p>
+</li>
+</ul>
+<h4 id="taking-action-includes-the-self-directed-iep"><a class="header" href="#taking-action-includes-the-self-directed-iep"><strong>Taking Action (includes the Self-Directed IEP)</strong></a></h4>
+<ul>
+<li>
+<p>Description</p>
+</li>
+<li>
+<p>Lesson Plans</p>
+</li>
+<li>
+<p>Reproducibles</p>
+</li>
+<li>
+<p>Presentation (.ppt)</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="goal-setting"><a class="header" href="#goal-setting">Goal-Setting</a></h1>
+<p>When we focus on goal setting and planning, helping our students to develop a roadmap for their future and set achievable goals that will help them reach their full potential.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transition-portfolios"><a class="header" href="#transition-portfolios">Transition Portfolios</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transportation"><a class="header" href="#transportation">Transportation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transition-assessments"><a class="header" href="#transition-assessments">Transition Assessments</a></h1>
+<p>Here, you will find information on available transition assessments. The purpose is to help teachers access simple tools that allow them to capture transition-related services and activities happening in the classroom, during community-based instruction, and throughout a student's school year. Authentic assessments can help inform transition and transition IEP decision-making.</p>
+<p>The resource will cover a variety of assessments, including parent surveys, education, self-determination, independent living, and employment/vocational. These assessments are designed to be simple tools that can be used to gather information on a student's transition-related skills and abilities. By gathering information from multiple settings, teachers can help ensure that their students are prepared for a wide range of post-secondary options.</p>
+<p>One key benefit of using authentic assessments is that they help provide a more complete picture of a student's strengths and areas for improvement. By gathering information from multiple sources, such as parents, teachers, and the students themselves, teachers can gain a better understanding of the student's abilities and needs. By using authentic assessments, teachers and IEP teams can make more informed decisions about transition planning and help ensure that students are prepared for success after graduation.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="general-assessment-resources"><a class="header" href="#general-assessment-resources">General Assessment Resources</a></h1>
+<ul>
+<li>The <a href="https://instrc.indiana.edu/transition-resources/transition-matrix.html">Indiana Secondary Transition Resource Center</a> has a Transition Assessment Matrix that allows you to select variables to narrow down your transition assessement choices. You may search by topic (e.g., Independent Living), grade level, assessments in Spanish or Burmese, and assessments for students with high support needs. </li>
+<li>The <a href="https://tagg.ou.edu/tagg/">Transition Assessment and Goal Generator (TAGG)</a> and TAGG Alternate use assessment items derived from research based student behaviors associated with positive postsecondary outcomes and are focused on employment and further education. </li>
+<li><a href="https://www.itransitionks.org/">iTransition</a> is a brief transition assessment that can be compelted online and printed out. It covers further education, employment, and independent living. </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="independent-living"><a class="header" href="#independent-living">Independent Living</a></h1>
+<p><a href="CommBasedSkillsAssess.pdf">Community Based Skills Assessment</a></p>
+<ul>
+<li>This assessment tool was created in collaboration between Autism Speaks and the Virginia Commonwealth University's Rehabilitation Research and Training Center. Although no existing tool met the specific needs of youths with Autism Spectrum Disorder (ASD), the literature review helped identify crucial functional life skills. These skills, informed by the reviewed instruments, contribute to an individual's successful transition into adulthood.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h3 id="vocationalemployment-transition-assessments"><a class="header" href="#vocationalemployment-transition-assessments">Vocational/Employment Transition Assessments</a></h3>
+<h3 id="employment-interest-assessments"><a class="header" href="#employment-interest-assessments">Employment Interest Assessments</a></h3>
+<ul>
+<li>
+<p><a href="StudentInterestSurvey-English.pdf">CTE Career Clusters Interest Survey</a></p>
+</li>
+<li>
+<p><a href="https://www.mynextmove.org/explore/ip">My Next Move (O-Net Interest Profiler)</a></p>
+</li>
+<li>
+<p><a href="https://www.careeronestop.org/Toolkit/Skills/skills-matcher-questions.aspx">Career One Stop: Career Exploration, Training, &amp; Jobs</a></p>
+</li>
+<li>
+<p><a href="https://www.careeronestop.org/Videos/CareerVideos/career-videos.aspx">Career One Stop Videos (English and Spanish)</a></p>
+</li>
+<li>
+<p><a href="onet-profiler-short.pdf">O-Net Interest Profiler (short form version)</a></p>
+</li>
+</ul>
+<h3 id="ecological-assessmentsinventories"><a class="header" href="#ecological-assessmentsinventories">Ecological Assessments/Inventories</a></h3>
+<ul>
+<li><a href="eco-inventory.pdf">Ecological Inventory Form</a></li>
+</ul>
+<h3 id="student-self-assessments-informal"><a class="header" href="#student-self-assessments-informal">Student Self-Assessments (Informal)</a></h3>
+<ul>
+<li><a href="soft-skills-self.pdf">Soft Skills</a></li>
+</ul>
+<h3 id="vocationalemployment-assessements-for-students-with-high-support-needs"><a class="header" href="#vocationalemployment-assessements-for-students-with-high-support-needs">Vocational/Employment Assessements for students with High Support Needs</a></h3>
+<ul>
+<li><a href="Pictorial_Interest_Inventory.pdf">Pictorial Interest Inventory</a> (Download and print)</li>
+<li><a href="trans-plan-visual-student-survey.pdf">Visual Student Survey</a> - strength and interest based pictorial assessment. Also includes independent living and leisure. </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="education"><a class="header" href="#education">Education</a></h1>
+<p>These assessments, forms, and inventories are for those students who want to attend postsecondary education. </p>
+<ul>
+<li>
+<p><a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html">Free ACT Prep</a></p>
+</li>
+<li>
+<p><a href="https://satsuite.collegeboard.org/psat-nmsqt/preparing/practice-tests">Free SAT Prep</a></p>
+</li>
+<li>
+<p><a href="https://www.khanacademy.org/test-prep/sat/full-length-sat-1">SAT Practice Test (full-length &amp; free) PDFs | Khan Academy</a></p>
+</li>
+<li>
+<p><a href="https://andrealsuk.wixsite.com/peaeassessment">Postsecondary Education and Experience Assessment (free)</a></p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="self-determination"><a class="header" href="#self-determination">Self-Determination</a></h1>
+<p>Air Self-Determination Scale </p>
+<ul>
+<li>
+<p><a href="AIR_User_Guide.pdf">AIR User Guide</a></p>
+</li>
+<li>
+<p><a href="AIR_Student_Fillable.pdf">Student Form</a></p>
+</li>
+<li>
+<p><a href="AIR_Parent_Fillable.pdf">Parent Form</a></p>
+</li>
+<li>
+<p><a href="AIR_Educator_Fillable.pdf">Educator Form</a> </p>
+</li>
+</ul>
+<p>Arc Self-Determination Scale </p>
+<ul>
+<li>
+<p><a href="arc-procedure.pdf">Procedural Guidelines</a></p>
+</li>
+<li>
+<p><a href="arc-sd-scale-rev2013.pdf">The Arc's Self-Determination Scale</a> </p>
+</li>
+</ul>
+<p><a href="ChoiceMakerAssessment2016.pdf">ChoiceMaker Self-Determination Assessment</a> (accompanying lessons are included under <a href="self-sd.html">self-determination</a>. </p>
+<p> </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="parent-surveys"><a class="header" href="#parent-surveys">Parent Surveys</a></h1>
+<p><a href="parent-transition-survey.pdf">Parent Transition Survey</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="iep"><a class="header" href="#iep">IEP</a></h1>
+<p>IEP resources currently feature quick tips and an agenda template. In the near future, it wil lbe expanded to incorporate best practices and timeline suggestions. Stay tuned as  this section is continuously updated. </p>
+<p>Also see <a href="student-led-IEP.html">Student Led IEPs</a></p>
+<div style="break-before: page; page-break-before: always;"></div><p>**IEP Meeting Agenda</p>
+<ol>
+<li>
+<p>Include Webex Guests! </p>
+</li>
+<li>
+<p>Welcome and Purpose of the Meeting: Annual IEP </p>
+</li>
+<li>
+<p>Introductions of the IEP Team Members/Notecard Activity </p>
+</li>
+<li>
+<p>Parental Rights </p>
+</li>
+<li>
+<p>Information/Comments from the Home Team/School Team</p>
+</li>
+<li>
+<p>Review of Current IEP </p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Transition Goals and Services</p>
+</li>
+<li>
+<p>IEP Present Levels and Annual Goals </p>
+</li>
+<li>
+<p>Considerations</p>
+</li>
+<li>
+<p>    Health care plan </p>
+</li>
+<li>
+<p>ESY</p>
+</li>
+<li>
+<p>Services </p>
+</li>
+<li>
+<p>****Transportation and Classes next year </p>
+</li>
+</ul>
+<ol start="8">
+<li>Final comments, complete PWN,  questions, etc.**</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><p>**Quick Tips: IEP Meeting </p>
+<ol>
+<li>
+<p>Contact parents for available times and dates </p>
+</li>
+<li>
+<p>Identify IEP team members </p>
+</li>
+<li>
+<p>Create a Doodle to get times and dates that work for most </p>
+</li>
+<li>
+<p>Send out outlook invite/email </p>
+</li>
+<li>
+<p>Student canva or presentation </p>
+</li>
+<li>
+<p>Send home NOM 10 days in advance </p>
+</li>
+<li>
+<p>Finalize former progress reports </p>
+</li>
+<li>
+<p>Collect input from Gen ed teachers and gather baseline data for new goals </p>
+</li>
+<li>
+<p>With input from team, write new IEP, PWN if needed </p>
+</li>
+<li>
+<p>Send home IEP draft within 5 days (do not include PWN) </p>
+</li>
+<li>
+<p>Get confirmation of who can and cannot attend meeting</p>
+</li>
+<li>
+<p>Appoint meeting notes “taker” </p>
+</li>
+<li>
+<p>Possibly: Gen ed excusal form </p>
+</li>
+<li>
+<p>Decide how you are going to show the IEP at the meeting/project or print off </p>
+</li>
+<li>
+<p>Get a copy of parental rights (school pysch. Will have this) </p>
+</li>
+<li>
+<p>Student involvement - how is the student involved in their IEP </p>
+</li>
+<li>
+<p>Create/use IEP Meeting Agenda </p>
+</li>
+<li>
+<p>Have IEP meeting, PWN, NOM, Excusal signed (all if needed). Double check that someone is taking notes </p>
+</li>
+<li>
+<p>Attach signed paperwork and possible other needed forms </p>
+</li>
+<li>
+<p>Finalize IEP and send home final copy to parents**</p>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="community-agencies"><a class="header" href="#community-agencies">Community Agencies</a></h1>
+<h3 id="kansas-community-agencies-and-services"><a class="header" href="#kansas-community-agencies-and-services">Kansas Community Agencies and Services</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>Cottonwood/CDDO</td><td>The Cottonwood/Community Developmental Disability Organization (CDDO) helps individuals with intellectual and developmental disabilities access services and support in the community.</td><td><a href="http://www.cddo.cwood.org">www.cddo.cwood.org</a></td></tr>
+<tr><td>Families Together</td><td>Families Together provides support, information, and training to families of children with disabilities and special healthcare needs.</td><td><a href="https://familiestogetherinc.org/">https://familiestogetherinc.org/</a></td></tr>
+<tr><td>Home and Community Based Waiver Service Information</td><td>The Kansas Department for Aging and Disability Services provides information on Home and Community Based Services (HCBS) programs for individuals with disabilities and older adults.</td><td><a href="https://kdads.ks.gov/kdads-commissions/long-term-services-supports/home-community-based-services-(hcbs)-programs">https://kdads.ks.gov/kdads-commissions/long-term-services-supports/home-community-based-services-(hcbs)-programs</a></td></tr>
+<tr><td>Independence, Inc.</td><td>Independence, Inc. provides services and support to individuals with disabilities to help them live independently in the community.</td><td><a href="http://www.independenceinc.org/">http://www.independenceinc.org/</a></td></tr>
+<tr><td>Kansas Guardianship Program</td><td>The Kansas Guardianship Program provides legal guardianship services for adults with disabilities who do not have family or friends able to serve as their guardians.</td><td><a href="http://www.ksgprog.org/">http://www.ksgprog.org/</a></td></tr>
+<tr><td>Ready for Good</td><td>Ready for Good is a social enterprise that employs individuals with disabilities to create sustainable products for the community.</td><td><a href="https://shopreadyforgood.com">https://shopreadyforgood.com</a></td></tr>
+<tr><td>Van Go, Inc.</td><td>Van Go, Inc. provides arts-based programming for youth with disabilities and those facing economic, social, or other challenges.</td><td><a href="https://www.van-go.org/">https://www.van-go.org/</a></td></tr>
+<tr><td>Kansas Vocational Rehabilitation Services</td><td>Vocational Rehabilitation Services helps individuals with disabilities prepare for, find, and maintain employment.</td><td><a href="http://www.dcf.ks.gov/services/rs/pages/employment-services.aspx">Quick Links</a></td></tr>
+</tbody></table>
+</div>
+<hr />
+<h3 id="other-resources"><a class="header" href="#other-resources"><strong>Other Resources</strong></a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Agency</th><th>Description</th><th>Website</th></tr></thead><tbody>
+<tr><td>CEC Division on Career Development and Transition</td><td>A division of the Council for Exceptional Children that focuses on career development and transition for students with disabilities.</td><td><a href="https://dcdt.org">https://dcdt.org</a></td></tr>
+<tr><td>National Center on Secondary Education and Transition</td><td>A center that focuses on improving secondary education and transition results for youth with disabilities.</td><td><a href="http://www.ncset.org">http://www.ncset.org</a></td></tr>
+<tr><td>National Technical Assistance Center on Transition: The Collaborative (NTACT:C)</td><td>A technical assistance and dissemination center that focuses on improving transition planning and services for youth with disabilities.</td><td><a href="https://transitionta.org">https://transitionta.org</a></td></tr>
+<tr><td>The Transition Coalition</td><td>A training and technical assistance organization that focuses on improving transition outcomes for youth with disabilities.</td><td><a href="https://transitioncoalition.org">https://transitioncoalition.org</a></td></tr>
+<tr><td>Zarrow Institute on Transition and Self-Determination</td><td>An institute that focuses on improving transition outcomes and promoting self-determination for youth with disabilities.</td><td><a href="https://www.ou.edu/education/centers-and-partnerships/zarrow">https://www.ou.edu/education/centers-and-partnerships/zarrow</a></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
